@@ -40,7 +40,8 @@ class LinkedList
       this.head = newnode;
     }
 
-    insertEnd(data) {
+    insertEnd(data) 
+    {
       // Create a new node with the given data
       let newnode = new newNode(data);    
       // Set the current node to the head of the linked list
