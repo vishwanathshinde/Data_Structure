@@ -13,7 +13,6 @@ class LinkedList
     {
         this.head = null
     }
-
     create(ele)
     {
         if(this.head == null)
