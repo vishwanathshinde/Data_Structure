@@ -30,7 +30,8 @@ class LinkedList
         }
     }
 
-    insertFront(ele) {
+    insertFront(ele) 
+    {
       // Create a new node with the given element
       let newnode = new newNode(ele);
       // Set the 'next' property of the new node to the current head of the linked list
