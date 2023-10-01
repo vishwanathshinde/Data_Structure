@@ -47,7 +47,8 @@ class LinkedList
       // Set the current node to the head of the linked list
       let current = this.head;
       // Traverse the linked list until the last node is reached
-      while (current.next != null) {
+      while (current.next != null) 
+      {
         current = current.next;
       }
       // Set the next pointer of the last node to the new node
