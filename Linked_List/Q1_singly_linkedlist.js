@@ -1,3 +1,6 @@
+// Vishwanath Manik Shinde
+// 2301179
+
 class newNode
 {
     constructor(data)
@@ -138,6 +141,21 @@ class LinkedList
         }
       }
     }
+
+    reverse() {
+      let current = this.head;
+      let prev = null;
+      let next = null;
+
+      while (current != null) {
+          next = current.next; // Save the next node
+          current.next = prev; // Reverse the link
+          prev = current; // Move prev to the current node
+          current = next; // Move current to the next node
+      }
+
+      this.head = prev; // Set the head to the last node, which is now the first node
+    }
 }
 
 const list = new LinkedList()
@@ -145,7 +163,14 @@ list.create(90)
 list.insertFront(10)
 list.insertEnd(100)
 list.insertInBetween(55,2)
+list.insertInBetween(56,3)
+list.insertInBetween(57,4)
 list.delFront()
 list.delEnd()
 list.deleteInBetween(2)
-list.display()
+console.log("Original List:");
+list.display();
+
+console.log("\nReversed List:");
+list.reverse();
+list.display();
